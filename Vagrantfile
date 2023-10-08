@@ -11,8 +11,8 @@
     lab6.vm.network "private_network", type: "dhcp" 
     lab6.vm.hostname = "lab6"
     lab6.vm.provision "shell" , path: "script.sh"
-    lab6.vm.provision "shell", inline: <<-SHELL
-      yum install -y redhat-lsb-core wget rpmdevtools rpm-build createrepo yum-utils gcc
-    SHELL
+    #lab6.vm.provision "shell", inline: <<-SHELL
+    #  yum install -y redhat-lsb-core wget rpmdevtools rpm-build createrepo yum-utils gcc
+    #SHELL
   end 
 end   
