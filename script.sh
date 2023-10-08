@@ -39,6 +39,7 @@ gpgcheck=0
 enabled=1
 EOF
 
-#ставим пакет для проверки
-yum install percona-orchestrator.x86_64 -y
+#ставим пакет для проверки и выводим список пакетов в репозитории
+yum install -y --repo=lab6 percona-orchestrator.x86_64
 yum list installed | grep orc
+yum list --repo=lab6
